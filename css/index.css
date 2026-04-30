@@ -1,0 +1,57 @@
+@import "./normalize.css";
+
+.container {
+  max-width: 500px;
+  margin: 20px auto 0;
+  padding: 0 15px;
+}
+
+.wrapper {
+  text-align: center;
+  padding: 15px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.title {
+  margin: 15px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form__input::placeholder {
+  color: black;
+}
+
+.form__input {
+  border: 1px solid black;
+}
+
+.form__input, .form__button {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.form__button {
+  margin-bottom: 15px;
+  background-color: inherit;
+  border: 1px solid black;
+}
+
+.text {
+  padding: 20px;
+  margin: 0;
+  margin-bottom: 15px;
+  border: 1px solid black;
+}
+
+.text:last-child {
+  margin-bottom: 0;
+}
