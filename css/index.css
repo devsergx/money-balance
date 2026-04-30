@@ -1,11 +1,14 @@
 @import "./normalize.css";
+@import "./variables.css";
 
 .page__body {
+  font-family: Arial, sans-serif;
   min-width: 375px;
+  background-color: var(--bg-primary-color);
 }
 
 .container {
-  max-width: 500px;
+  max-width: 450px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -17,7 +20,10 @@
   padding-top: 0;
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  color: var(--accent-color);
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
 }
 
 .title {
@@ -30,12 +36,15 @@
   gap: 15px;
 }
 
-.form__input::placeholder {
-  color: black;
+.form__input {
+  color: var(--accent-color);
+  background-color: inherit;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
 }
 
-.form__input {
-  border: 1px solid black;
+.form__input::placeholder {
+  color: var(--accent-color);
 }
 
 .form__input, .form__button {
@@ -44,15 +53,30 @@
 
 .form__button {
   margin-bottom: 15px;
-  background-color: inherit;
-  border: 1px solid black;
+  background-color: var(--accent-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+@media (any-hover:hover) {
+  .form__button:hover {
+    transform: scale(0.98);
+  }
+}
+
+.form__input:focus-visible, .form__button:focus-visible {
+  outline: 1px solid var(--accent-color);
+  outline-offset: 2px;
 }
 
 .text {
   padding: 10px;
   margin: 0;
   margin-bottom: 15px;
-  border: 1px solid black;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
 }
 
 .text:last-child {
