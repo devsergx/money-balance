@@ -11,7 +11,7 @@
 }
 
 .wrapper {
-  margin-top: 100px;
+  margin-top: 50px;
   text-align: center;
   padding: 15px;
   padding-top: 0;
@@ -40,8 +40,6 @@
 
 .form__input, .form__button {
   padding: 10px;
-  font-size: 18px;
-  font-weight: 600;
 }
 
 .form__button {
@@ -51,7 +49,7 @@
 }
 
 .text {
-  padding: 20px;
+  padding: 10px;
   margin: 0;
   margin-bottom: 15px;
   border: 1px solid black;
